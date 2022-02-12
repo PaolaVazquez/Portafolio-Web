@@ -17,7 +17,7 @@
    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
        <div class="container">
          <a class="navbar-brand" href="index.html"><img src="img/AM_Logo.png" alt="Amazing Mexico"></a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" >
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" onclick="ocultarimagen();">
            <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse" id="navbarText">
@@ -29,13 +29,13 @@
                <a class="nav-link" href="Cabo.html" style="color: #38658C;">Cabo</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="Mayan-Rivera.html" style="color: #38658C;">Mayan Rivera</a>
+               <a class="nav-link" href="Mayan-Rivera.html" style="color: #38658C;">Riviera Maya</a>
              </li>
              <li class="nav-item">
                <a class="nav-link" href="Cancun.html" style="color: #38658C;">Cancun</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="Blog.html" style="color: #38658C;">Blog</a>
+               <a class="nav-link" href="https://blog.amazing-mexico.com" style="color: #38658C;">Blog</a>
              </li>
              <li class="nav-item">
                <a class="nav-link" href="FAQS.html" style="color: #38658C;">FAQS</a>
@@ -44,7 +44,7 @@
                <a class="nav-link" aria-current="page" href="Request.html" style="color: #38658C;" data-bs-toggle="modal" data-bs-target="#exampleModal"> <b>Request a Quote</b> </a>
              </li>
            </ul>
-           <span class="navbar-text">
+           <span class="navbar-text" id="telefono">
             <a href="tel:+18665015836">
           <h6>ANY DOUBT? CALL TOLL FREE</h6>
           <h2 class="font-weight-bold">1 866 501 5836</h2>
@@ -64,7 +64,7 @@
 
      <div class="text-paq">
       <div class="texto">
-       <h2 id="text-"> <b>Cancun Villa del Palmar <br> All-Inclusive</b> </h2>
+       <h2 id="text-"> <b>Cancun Palmar <br> All-Inclusive</b> </h2>
        <h4>5 days and 4 nights <br>
       2 adults and 2 children <br>
       All Inclusive</h4>
@@ -72,9 +72,9 @@
       $1397 SAVE 79%</span></h3>
       <span>*Package Price <br>
         Not Per Night, Not Per Person</span>
-      <h4 class="terms"><b>Worry Free Booking</b>  </h4>
+      <h4 class="terms-"><b>Worry Free Booking</b>  </h4>
 
-      <h6 class="terms">
+      <h6 class="terms-">
       Book Now, decide dates later. <br>
   Free Cancellation before</h6>
       </div>
@@ -334,8 +334,9 @@
                 <article id="tab6">
                     <div class="container">
                       <div class="row d-flex justify-content-center" id="review">
-                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="wYX4zY3z"></script>
-                        <div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=1223882557780364&id=100004758944992" data-width="500"></div>
+                        <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="qDgtM26G"></script>
+<div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=1223882557780364&amp;id=100004758944992" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/permalink.php?story_fbid=1223882557780364&amp;id=100004758944992" class="fb-xfbml-parse-ignore"><p>The beautiful foliage ,Gorgeous temperatures and of course the drinks</p>Posted by <a href="#" role="button">Darlene Kormos</a> on&nbsp;<a href="https://www.facebook.com/permalink.php?story_fbid=1223882557780364&amp;id=100004758944992">Monday, 27 May 2019</a></blockquote></div>
                         
                         
                        
@@ -378,7 +379,7 @@
                       </div>
                   </div>
                   <div class="d-flex justify-content-center" id="boton">
-                    <button type="submit" class="btn btn-primary request-faq d-block mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="PV.html">MORE PACKAGE</a> </button> 
+                    <button type="submit" class="btn btn-primary request-faq d-block mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="Cancun.html">MORE PACKAGE</a></button> 
                   </div>
                   <div class="d-flex justify-content-center" >
                     <img src="img/AM_BBB-01.png" alt="BBB"> 
@@ -397,7 +398,7 @@
             <div class="row  d-flex justify-content-center pt-5">
                 <div class="cool-md-3 pt-5 terms">
                     <p>
-                        <a href=""><u>TERMS & CONDITIONS</u></a>
+                        <a href="terminos.html"><u>TERMS & CONDITIONS</u></a>
                         <br>
                         <a href=""><u>PRIVACY POLICY</u></a>
                         
@@ -448,69 +449,69 @@
 <!--MODAL-->
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl ">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"> Quote Request Form</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
-      </div>
-      <div class="modal-body">
-        <h3>Do you need a customized package?</h3>
-        <p>Maybe number of guests or number of nights you want to travel, don't match with our standard packages. Don't
-          worry, you can fill the next form to request a quote according to your needs.
-          </p>
-          <p>Please enter your information and one of our reservations specialists will contact you by phone or email to bring you a
-              customized quote.</p>
-              <div class="container">
-                  <form action="https://gmail.us20.list-manage.com/subscribe/post?u=da9e327496004c1c6803cf0b4&amp;id=769ad4dfad" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate></form>
-                      <!--ROW 1-->
-                  <div class="row">
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                  <label for="exampleInputPassword1">First Name</label>
-                                  <input  type="text"  name="FNAME" id="mce-FNAME"  class="form-control"  placeholder="First Name">
-                                </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                  <label for="exampleInputPassword1">Last Name</label>
-                                  <input  type="text" name="LNAME" id="mce-LNAME" class="form-control"  placeholder="Last Name">
-                                </div>
-                          </div>
-                  </div>
-                  <!--ROW 2-->
-                  <div class="row">
-                      <div class="col-md-6">
-                          <label for="exampleInputEmail1">Your Email</label>
-                          <input type="email" class="form-control"name="EMAIL" id="mce-EMAIL" aria-describedby="emailHelp" placeholder="email@domain">
-                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="exampleInputPassword1">Your Phone</label>
-                              <input type="text" name="PHONE"  id="mce-PHONE" class="form-control"  placeholder="Phone">
+    <div class="modal-dialog modal-xl ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"> Quote Request Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <h3>Do you need a customized package?</h3>
+          <p>Maybe number of guests or number of nights you want to travel, don't match with our standard packages. Don't
+            worry, you can fill the next form to request a quote according to your needs.
+            </p>
+            <p>Please enter your information and one of our reservations specialists will contact you by phone or email to bring you a
+                customized quote.</p>
+                <div class="container">
+                    <form action="https://gmail.us20.list-manage.com/subscribe/post?u=da9e327496004c1c6803cf0b4&amp;id=769ad4dfad" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate></form>
+                        <!--ROW 1-->
+                    <div class="row d-flex justify-content-center">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>First Name</label>
+                                    <input type="text"  name="FNAME" id="mce-FNAME" class="form-control"placeholder="First Name">
+                                  </div>
                             </div>
-                      </div>
-                  </div>
-                 <!--ROW 3-->
-                 <div class="row">
-                     <div class="col-md-6">
-                      <div class="form-group">
-                              <label for="mce-MMERGE3">Destination</label>
-                              <select class="form-control" name="MMERGE3" id="mce-MMERGE3">
-                                <option>Select One</option>
-                                <option value="Puerto Vallarta">Puerto Vallarta</option>
-                                <option value="Cabo San Luca">Cabo</option>
-                                <option value="Mayan Rivera">Mayan Rivera</option>
-                                <option value="Cancun">Cancun</option>
-                              </select>
-                          </div>
-                     </div>
-                     <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="mce-MMERGE5">Resort</label>
-                          <select class="form-control" name="MMERGE5" id="mce-MMERGE5">
-                            <option>Select One</option>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Last Name</label>
+                                    <input  type="text" name="LNAME" id="mce-LNAME" class="form-control"  placeholder="Last Name">
+                                  </div>
+                            </div>
+                    </div>
+                    <!--ROW 2-->
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6">
+                            <label>Your Email</label>
+                            <input type="email" class="form-control" name="EMAIL" id="mce-EMAIL" aria-describedby="emailHelp" placeholder="email@domain">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Your Phone</label>
+                                <input type="text" name="PHONE"  id="mce-PHONE" class="form-control"  placeholder="Phone">
+                              </div>
+                        </div>
+                    </div>
+                   <!--ROW 3-->
+                   <div class="row d-flex justify-content-center">
+                       <div class="col-md-6">
+                        <div class="form-group">
+                                <label for="mce-MMERGE3">Destination</label>
+                                <select class="form-control"  name="MMERGE3" id="mce-MMERGE3">
+                                  <option>Select One</option>
+                                  <option value="Puerto Vallarta">Puerto Vallarta</option>
+                                  <option value="Cabo San Luca">Cabo</option>
+                                  <option value="Mayan Rivera">Mayan Rivera</option>
+                                  <option value="Cancun">Cancun</option>
+                                </select>
+                            </div>
+                       </div>
+                       <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="mce-MMERGE5">Resort</label>
+                            <select class="form-control" name="MMERGE5" id="mce-MMERGE5">
+                              <option>Select One</option>
                               <option value="Villa del Palmar">Cancun Villa del Palmar</option>
                               <option value="Oasis Palm Lite">Oasis Palm Lite</option>
                               <option value="Grand Oasis Palm">Grand Oasis Palm</option>
@@ -524,74 +525,75 @@
                               <option value="Barcelo Gran Faro">Barcelo Gran Faro</option>
                               <option value="Reflect Krystal Grand">Reflect Krystal Grand</option>
                             </select>
-                          </select>
-                        </div>
-                     </div>
-                  </div>
-              </div>
-                 <!--ROW 4-->
-                 <div class="row">
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="exampleInputPassword1">Arrival Date</label>
-                          <input type="text"  name="MMERGE6" id="mce-MMERGE6" class="form-control"  >
-                        </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="exampleInputPassword1">Departure Date</label>
-                          <input  type="text" name="MMERGE7" id="mce-MMERGE7" class="form-control" >
-                        </div>
-                  </div>
-                 </div>
-                 <!--ROW 5-->
-                 <div class="row">
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="exampleInputPassword1">Number of Adults</label>
-                          <input type="text" name="MMERGE8"id="mce-MMERGE8" class="form-control" placeholder="0">
-                        </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="exampleInputPassword1">Number of Children</label>
-                          <input type="text" name="MMERGE9" id="mce-MMERGE9" class="form-control"  placeholder="0">
-                        </div>
-                  </div>
-                 </div>
-                 <!--ROW 6-->
-                 <div class="row">
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="exampleInputPassword1">Time to be reached</label>
-                          <input type="text" name="MMERGE10"  id="mce-MMERGE10" class="form-control" placeholder="0">
-                        </div>
-                  </div>
-                 </div>
-                 <!--ROW 7-->
-                 <div class="row">
-                  <div class="col-md-12">
-                      <div class="form-group">
-                          <label for="exampleInputPassword1">Comments</label>
-                          <input type="text" name="MMERGE11" id="mce-MMERGE11" class="form-control"  >
-                        </div>
-                  </div>
-                 </div>
-              </form>
-      </div>
-      <div class="modal-footer">
-          <button type="button" class="btn btn-primary" id="mc-embedded-subscribe" onclick="sendToEplat()">Submit</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+                          </div>
+                       </div>
+                    </div>
 
+                   <!--ROW 4-->
+                   <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="mce-MMERGE6">Arrival Date</label>
+                            <input type="text"  name="MMERGE6" id="mce-MMERGE6" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label >Departure Date</label>
+                            <input  type="text" name="MMERGE7" id="mce-MMERGE7"  class="form-control">
+                          </div>
+                    </div>
+                   </div>
+                   <!--ROW 5-->
+                   <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Number of Adults</label>
+                            <input type="text" name="MMERGE8"id="mce-MMERGE8" class="form-control" placeholder="0">
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label >Number of Children</label>
+                            <input type="text" name="MMERGE9" id="mce-MMERGE9" class="form-control"  placeholder="0">
+                          </div>
+                    </div>
+                   </div>
+                   <!--ROW 6-->
+                   <div class="row d-flex justify-content-start">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label >Time to be reached</label>
+                            <input type="text" name="MMERGE10"  id="mce-MMERGE10" class="form-control"  placeholder="0">
+                          </div>
+                    </div>
+                   </div>
+                   <!--ROW 7-->
+                   <div class="row d-flex justify-content-start">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label >Comments</label>
+                            <input type="text" name="MMERGE11" id="mce-MMERGE11" class="form-control" id="exampleInputPassword1" >
+                          </div>
+                    </div>
+                   </div>
+                </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-primary g-recaptcha" id="mc-embedded-subscribe"  data-sitekey="6LfOunsaAAAAAJ3Ko_tXG02l-deACXdnKAM2VkTe" 
+        data-callback='onSubmit' 
+        data-action='submit' onclick="sendToRequest()">Submit</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    </div>
   <!-- ePlat Chat Code -->
 
   <div id="eplatChat">
 
-    <chat primary-color="#006581"
+    <chat primary-color="#8AE7D4"
 
           welcome-title="Welcome to Amazing Mexico!"
 
@@ -608,6 +610,12 @@
 <!--Close ePlat Chat Code-->
 
 
+		 <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+ </script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 

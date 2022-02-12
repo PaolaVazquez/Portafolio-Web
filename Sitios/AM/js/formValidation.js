@@ -161,37 +161,19 @@ function sendToEplat () {
   var email = document.getElementById('mce-EMAIL'); 
   var phone = document.getElementById('mce-PHONE');
   var destination = document.getElementById('mce-MMERGE3');
-  var resort = document.getElementById('mce-MMERGE5');
-  var arrival = document.getElementById('mce-MMERGE6');
-  var departure = document.getElementById('mce-MMERGE7');
-  var adults = document.getElementById('mce-MMERGE8');
-  var kids = document.getElementById('mce-MMERGE9');
-  var timeToReach = document.getElementById('mce-MMERGE10');
-  var comments = document.getElementById('mce-MMERGE11');
-  let notes = notes = "Resort: " + resort.value + "<br />Adults: " + adults.value + "<br />Children: " + kids.value + "<br />Comments: " + comments.value;
   
   //var timeToReach = timeZone.value;
-  var request = JSON.stringify({"webhookID": "7ca55fae-1454-e5bc-2614-e8cbdef52bc5", "firstName": fname.value, "lastName": lname.value, "phone": phone.value, "email": email.value, "destination": destination.value, "timeToReach": timeToReach.value, "arrivalDate": arrival.value, "departureDate": departure.value, "notes": notes})
-  var data = JSON.stringify({"webhookID": "a61c9e81-b93b-e671-35bb-249e80183d202", "firstName": fname.value, "lastName": lname.value, "phone": phone.value, "email": email.value, "destination": destination.value, "timeToReach": timeToReach.value, "arrivalDate": arrival.value, "departureDate": departure.value, "notes": notes});
+  var data = JSON.stringify({"webhookID": "4b8bfcb9-bcdc-e3d7-e5d8-b9cb7e9000a3", "firstName": fname.value, "lastName": lname.value, "phone": phone.value, "email": email.value, "destination": destination.value});
   var xhr = new XMLHttpRequest();
-  var xhr1 = new XMLHttpRequest();
   var url = "https://developers.eplat.com/api/webhooks/incoming/genericjson/newlead?code=80f32f6123104d09a72c000047564e51";
-  xhr1.open("POST", url, true);
   xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-Type", "application/json");
-  xhr1.setRequestHeader("Content-Type", "applicarion/json");
   // Create a state change callback 
   xhr.onreadystatechange = function () { 
       if (xhr.readyState === 4 && xhr.status === 200) { 
           // console.log(xhr.statusText);
       } 
   };
-  xhr1.onreadystatechange = function () { 
-    if (xhr1.readyState === 4 && xhr.status === 200) { 
-        // console.log(xhr.statusText);
-    } 
-};
-xhr1.send(request);
   xhr.send(data);
   //console.log(data);
 }

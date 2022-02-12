@@ -31,18 +31,6 @@ img.zoom {
     padding: 5px 20px;
     border-top: #35253C solid 2px;
 }
-@keyframes crescendo{
-
-    80%{
-        transform: scale(1.1);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-a{
-    text-decoration: none;
-}
 @keyframes star {
     0% {
       opacity: 0;
@@ -59,7 +47,9 @@ a{
       opacity: 0;
       transform: translateZ(-1000em);
     }
-  }
+  }a{
+    text-decoration: none;
+}
 @font-face{
     font-family: "Oh Golds";
     src: url("fonts/Oh!\ golds\ DEMO.ttf");
@@ -77,13 +67,10 @@ a{
     font-size: 0.9em;
     text-align: right;
 }
-/*MARCADOR EN LAS PÁGINAS*/
 ul li.active a{
     background: #E7FAF6;
     color: #03738C;
-}
-#logo{
-    max-width: 200px;
+    height: auto;
 }
 .header-edit h1{
     color: white;
@@ -91,8 +78,8 @@ ul li.active a{
 }
 .titulo-cabecera{
     font-size: 10.5vw;
+text-shadow: 3px 3px #506579;
     color: white;
-    text-shadow: 3px 3px #506579;
     margin-top: 400px;
 }
 @media(max-width:667px){
@@ -116,7 +103,7 @@ p{
     font-family: 'Montserrat', sans-serif; 
 }
 .navbar-text{
-    margin-left: 45px;
+    margin-left: 80px;
 }
 .navbar-text, span h6{
     color: #03738C;
@@ -144,7 +131,7 @@ p{
 }
 .looking p{
     text-align: center;
-    margin: 20px;
+ margin: 20px;
 }
 #azul{
     color: #38658C;
@@ -205,7 +192,6 @@ p{
 .fondo-verde{
     background: #E7FAF6;
     height: auto;
-
 }
 .mapa{
     margin-bottom: 50px;
@@ -224,15 +210,27 @@ p{
 }
 /*FOOTER*/
 footer{
-    background-image: url("../img/AM_Footer-02.png");
+     background-image: url("../img/AM_Footer-01.png");
 }
 .terms p, a, u{
     color: #8AE7D4;
-    padding: 50px 10px 0px 10px;
 
 }
 .contact p{
     padding: 50px 10px 0px 10px;
+}
+@media(max-width:366px){
+    .terms p, a, u{
+        color: #8AE7D4;
+        margin-top: 60px;
+    
+    }
+}
+
+@media(max-width:366px){
+    .contact{
+        margin-top: -20px;
+    }
 }
 .copy p{
     color: white;
@@ -240,7 +238,7 @@ footer{
 
 }
 .redes img{
-    max-width: 80px;
+    max-width: 50px;
     padding: 50px 10px 0px 10px;
 }
 .pagos h2{
@@ -250,7 +248,7 @@ footer{
 }
 .pagos img{
     max-width: 70px;
-    margin-bottom: 100px;
+ margin-bottom: 100px;
 }
 /*Best Deals*/
 .best-deals{
@@ -261,22 +259,15 @@ footer{
 }
 /*OFERTA DE HOTELES*/
 .price{
-    padding: 15px 0px 0px 10px;
+    margin-top:15px;
     font-weight: bold;
-}
-.price-1{
+}.price-1{
     padding: 250px 0px 0px 10px;
 }
-#Hotel-1{ /*Villa-Del-Palmar.png*/
+#Hotel-1{
     background: linear-gradient(rgba(66, 65, 65, 0), rgba(0, 101, 129)),  url("../img/Villa-Del-Palmar.png") center right/cover no-repeat;
     min-height: calc(330px + 10vmin);
-    /*width: 50vh;
-    max-width: 270px;
-    height: 50vh;
-    max-height: 400px;
-    position: relative;*/
     font-family: 'Montserrat', sans-serif; 
-    margin-bottom: 50px;
     border-style: solid;
     border-color: white;
     border-width: thick;
@@ -288,15 +279,11 @@ footer{
 }
 #Hotel-1 h2, h3, h4{
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 15px;
 }
 #Hotel-2{
     background: linear-gradient(rgba(0, 0, 0,0), rgba(56, 101, 140)), url("../img/Ocean-Rivera.png") center right/cover no-repeat;
-   /* width: 50vh;
-    max-width: 270px;
-    height: 50vh;
-    max-height: 400px;
-    position: relative;*/
+    min-height: calc(330px + 10vmin);
     font-family: 'Montserrat', sans-serif; 
     border-style: solid;
     border-color: white;
@@ -309,15 +296,11 @@ footer{
 }
 #Hotel-2 h2, h3, h4{
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 15px;
 }
 #Hotel-3{
     background: linear-gradient(rgba(0, 0, 0,0), rgba(56, 101, 140)), url("../img/Las-Palmas.png") center right/cover no-repeat;
-   /* width: 50vh;
-    max-width: 270px;
-    height: 50vh;
-    max-height: 400px;
-    position: relative;*/
+    min-height: calc(330px + 10vmin);
     font-family: 'Montserrat', sans-serif;
     border-style: solid;
     border-color: white; 
@@ -330,19 +313,15 @@ footer{
 }
 #Hotel-3 h2, h3, h4{
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 15px;
 }
 .tit-H3{
-    margin-top: 160px;
+    margin-top: 220px;
     
 }
 #Hotel-4{
     background: linear-gradient(rgba(0, 0, 0,0), rgba(56, 101, 140)), url("../img/Barcelo-Gran-Farp.png") center right/cover no-repeat;
-   /* width: 50vh;
-    max-width: 270px;
-    height: 50vh;
-    max-height: 400px;
-    position: relative;*/
+    min-height: calc(330px + 10vmin);
     font-family: 'Montserrat', sans-serif; 
     border-style: solid;
     border-color: white;
@@ -355,12 +334,12 @@ footer{
 }
 #Hotel-4 h2, h3, h4{
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 15px;
 }
 #Hotel-5{
     background: linear-gradient(rgba(66, 65, 65, 0), rgba(0, 101, 129)),  url("../img/Oasis-Pal-Lite.png") center right/cover no-repeat;
+    min-height: calc(330px + 10vmin);
     font-family: 'Montserrat', sans-serif; 
-    margin-bottom: 50px;
     border-style: solid;
     border-color: white;
     border-width: thick;
@@ -372,10 +351,11 @@ footer{
 }
 #Hotel-5 h2, h3, h4{
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 15px;
 }
 #Hotel-6{
     background: linear-gradient(rgba(66, 65, 65, 0), rgba(0, 101, 129)),  url("../img/Bluebay-Gran-Esmeralda.png") center right/cover no-repeat;
+    min-height: calc(330px + 10vmin);
     font-family: 'Montserrat', sans-serif; 
     margin-bottom: 50px;
     border-style: solid;
@@ -389,11 +369,13 @@ footer{
 }
 #Hotel-6 h2, h3, h4{
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 15px;
 }
 #Hotel-7{
     background: linear-gradient(rgba(66, 65, 65, 0), rgba(0, 101, 129)),  url("../img/Buenaventura-Grand.png") center right/cover no-repeat;
+    min-height: calc(330px + 10vmin);
     font-family: 'Montserrat', sans-serif; 
+    margin-bottom: 50px;
     border-style: solid;
     border-color: white;
     border-width: thick;
@@ -405,10 +387,11 @@ footer{
 }
 #Hotel-7 h2, h3, h4{
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 15px;
 }
 #Hotel-8{
     background: linear-gradient(rgba(66, 65, 65, 0), rgba(0, 101, 129)),  url("../img/Krystal-Grand.png") center right/cover no-repeat;
+    min-height: calc(330px + 10vmin);
     font-family: 'Montserrat', sans-serif; 
     margin-bottom: 50px;
     border-style: solid;
@@ -422,11 +405,13 @@ footer{
 }
 #Hotel-8 h2, h3, h4{
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 15px;
 }
 #Hotel-9{
     background: linear-gradient(rgba(66, 65, 65, 0), rgba(0, 101, 129)),  url("../img/Grand-Oasis-Palm.png") center right/cover no-repeat;
+    min-height: calc(330px + 10vmin);
     font-family: 'Montserrat', sans-serif; 
+    margin-bottom: 50px;
     border-style: solid;
     border-color: white;
     border-width: thick;
@@ -438,11 +423,13 @@ footer{
 }
 #Hotel-9 h2, h3, h4{
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 15px;
 }
 #Hotel-10{
     background: linear-gradient(rgba(66, 65, 65, 0), rgba(0, 101, 129)),  url("../img/Barcelo-Misma-Loya.png") center right/cover no-repeat;
+    min-height: calc(330px + 10vmin);
     font-family: 'Montserrat', sans-serif; 
+    margin-bottom: 50px;
     border-style: solid;
     border-color: white;
     border-width: thick;
@@ -454,10 +441,11 @@ footer{
 }
 #Hotel-10 h2, h3, h4{
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 15px;
 }
 #Hotel-11{
     background: linear-gradient(rgba(66, 65, 65, 0), rgba(0, 101, 129)),  url("../img/Grand-Oasis.png") center right/cover no-repeat;
+    min-height: calc(330px + 10vmin);
     font-family: 'Montserrat', sans-serif; 
     margin-bottom: 50px;
     border-style: solid;
@@ -471,10 +459,11 @@ footer{
 }
 #Hotel-11 h2, h3, h4{
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 15px;
 }
 #Hotel-12{
     background: linear-gradient(rgba(66, 65, 65, 0), rgba(0, 101, 129)),  url("../img/Melia.png") center right/cover no-repeat;
+    min-height: calc(330px + 10vmin);
     font-family: 'Montserrat', sans-serif; 
     margin-bottom: 50px;
     border-style: solid;
@@ -488,11 +477,10 @@ footer{
 }
 #Hotel-12 h2, h3, h4{
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 0px 0px 5px;
-}
-@media(max-width:375px){
+    padding: 0px 0px 0px 15px;
+}@media(max-width:375px){
     .tit-H3{
-        margin-top: 100px;
+        margin-top: 200px;
     }
     #Hotel-4{
         margin-bottom: 30px;
@@ -635,8 +623,6 @@ footer{
     color: white;
 }
 .img-more1 h4{
-    font-size: 1em;
-    font-weight:lighter;
     padding: 0px 0px 0px 10px;
 }
 .img-more1 h2{
@@ -659,8 +645,6 @@ footer{
     padding: 0px 0px 0px 10px;
 }
 .img-more2 h4{
-    font-size: 1em;
-    font-weight:lighter;
     padding: 0px 0px 0px 10px;
 }
 .img-more3{
@@ -678,8 +662,6 @@ footer{
     font-size: 1.8em;
 }
 .img-more3 h4{
-    font-size: 1em;
-    font-weight:lighter;
     padding: 0px 0px 0px 10px;
 }
 .img-more4{
@@ -693,8 +675,6 @@ footer{
     color: white;
 }
 .img-more4 h4{
-    font-size: 1em;
-    font-weight:lighter;
     padding: 0px 0px 0px 10px;
 }
 .img-more4 h2{
@@ -703,22 +683,15 @@ footer{
 }
 .img-more5{
     background: linear-gradient(rgba(0, 0, 0,0), rgba(0, 0, 0, 0.7)), url("../img/Blog_5.png") center right/cover no-repeat;
-    width: 50vh;
-    max-width: 430px;
-    height: 50vh;
-    max-height: 430px;
-    position: relative;
+    min-height: calc(330px + 10vmin);
     font-family: 'Montserrat', sans-serif; 
     color: white;
-
+    margin-right: -15px;
 }
-
 .img-more5 a{
     color: white;
 }
 .img-more5 h4{
-    font-size: 1em;
-    font-weight:lighter;
     padding: 0px 0px 0px 10px;
 }
 .img-more5 h2{
@@ -726,6 +699,13 @@ footer{
     font-size: 1.8em;
 }
 /*PUERTO VALLARTA*/
+.header-PV{
+    background-image: url("../img/sculpture-2084271_1920.png");
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
 .titulo-cabecera-PV{
     font-size: 10.5em;
     text-shadow: 3px 3px #506579;
@@ -736,17 +716,11 @@ footer{
     margin-left: 50px;
     margin-top: 20px;
 }
-.titulo-cabecera-terms{
-    font-size: 8.5em;
-    color: white;
-    text-shadow: 3px 3px #506579;
-    text-align: center;
-    padding-top: 100px;
-}
+
 .titulo-cabecera-faqs{
     font-size: 10.5em;
-    color: white;
     text-shadow: 3px 3px #506579;
+    color: white;
     text-align: center;
     padding-top: 200px;
 }
@@ -766,6 +740,11 @@ footer{
     }
 }
 @media(max-width:366px){
+    .image-cabecera-PV{
+        margin-left: 10px;
+        margin-top: 20px;
+        width: 350px;
+    }
     .best-dest{
         width: 366px;
     }
@@ -773,20 +752,20 @@ footer{
         margin-top: 20px;
        margin-left: 100px;
     }
+    .header-PV{
+        background-image: url("../img/AM_Mobile-Header-02.png");
+        height: 100vh;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
 }
-
 #tiempo img{
     margin-left: 90px;
     margin-bottom: 10px;
 
 }
 /*FORMULARIO*/
-@media(max-width:412px){
-    #form{
-        margin: 10px 10px 10px 10px;
-    }
-}
-
 .formulario label{
     font-family: 'Montserrat', sans-serif;
 }
@@ -841,6 +820,16 @@ footer{
 .nav-pills{
     background: #E5EEE9;
     border-radius: 10px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background: #B4C52B;
+    border-radius: 10px;
+}
+.apartado{
+    padding: 0px 40px 0px 10px;
+}
+.apartados{
+    padding: 0px 10px 0px 10px;
 }
 ul li a{
     color: #03738C;
@@ -921,9 +910,72 @@ ul li a{
        max-width: 366px;
     }
 }
+/*CANCUN*/
+.header-Cancun{
+    background-image: url("../img/Cancun-header.png");
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.titulo-cabecera-Cancun{
+    font-size: 10.5em;
+    text-shadow: 3px 3px #506579;
+    color: white;
+    margin-top: 400px;
+}
+
+/*CABOS*/
+.header-Cabos{
+    background-image: url("../img/Cabos.png");
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.titulo-cabecera-Cabos{
+    font-size: 10.5em;
+    text-shadow: 3px 3px #506579;
+    color: white;
+    margin-top: 400px;
+}
 
 
-
+/*RIVERA*/
+.header-RM{
+    background-image: url("../img/Mayan-Riviera.png");
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.titulo-cabecera-RM{
+    font-size: 10.5em;
+    text-shadow: 3px 3px #506579;
+    color: white;
+    margin-top: 400px;
+}
+@media screen and (max-width:412px){
+    .titulo-cabecera-RM{
+        margin-top: 200px;
+        font-size: 6.5em;
+    }
+    .titulo-cabecera-Cabos{
+        margin-top: 200px;
+        font-size: 6.5em;
+    }
+    .titulo-cabecera-Cancun{
+        margin-top: 200px;
+        font-size: 6.5em;
+    }
+    .titulo-cabecera-PV{
+        margin-top: 200px;
+        font-size: 5.5em;
+    }
+    .titulo-cabecera-faqs{
+        font-size: 5.5em;
+    }
+}
 /*BLOG*/
 
 
@@ -1203,12 +1255,26 @@ ul li a{
     color: white;
     font-family: 'Montserrat', sans-serif; 
     text-align: right;
-    padding: 60px 60px 20px 10px;
+    padding: 60px 350px 20px 10px;
 }
-
 .terms{
     color: #006581;
+    margin-top: 50px;
 }
+.terms-{
+    color: #006581;
+}
+@media(max-width:412px){
+    .text-paq{
+        padding: 10px 20px 20px 10px;
+    }
+.terms- h4{
+    margin-top: -20px;
+
+}
+
+}
+
 #paq{
     background: #02C0D1;
     border-radius: 20px 20px 0px 0px;
@@ -1218,8 +1284,7 @@ ul li a{
     color: white;
     font-size: 1.3em;
     text-align: left;
-}
-#card{
+}#card{
     border: none;
 }
 #review img{ 
@@ -1274,14 +1339,12 @@ ul li a{
     font-family: 'Montserrat', sans-serif; 
 }
 #galle-1{
-    background:  url("../img/Room-1.png") center right/cover no-repeat;
-    width: 55vh;
+    background:  url("../img/Room-1.png") center right/cover no-repeat;    width: 55vh;
     max-width: 210px;
     height: 55vh;
     max-height: 210px;
-    position: relative;
-   /* min-height: calc(330px + 10vmin);*/
-    font-family: 'Montserrat', sans-serif; 
+    position: relative;    
+   font-family: 'Montserrat', sans-serif; 
 }
 #galle-2{
     background:  url("../img/Room-2.png") center right/cover no-repeat;
@@ -1289,6 +1352,7 @@ ul li a{
     max-width: 210px;
     height: 55vh;
     max-height: 210px;
+    position: relative;
     font-family: 'Montserrat', sans-serif; 
 }
 #galle-3{
@@ -1297,12 +1361,12 @@ ul li a{
     max-width: 210px;
     height: 55vh;
     max-height: 210px;
+    position: relative;
     font-family: 'Montserrat', sans-serif; 
 }
 /*Modal*/
 .modal{
     color: #2F2F2F;
-    border: none;
 }
 @media(max-width:366px){
     .modal{
@@ -1312,10 +1376,9 @@ ul li a{
 .modal-header{
     background: #02C0D1;
     color: white;
-    border-radius: 10px;
 }
 .modal-footer button{
- 
+    margin-right: 450px;
     width: 200px;
     background: #B4C52B;
     border: #B4C52B;

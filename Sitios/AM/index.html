@@ -30,13 +30,13 @@
                 <a class="nav-link" href="Cabo.html" style="color: #38658C;">Cabo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Mayan-Rivera.html" style="color: #38658C;">Mayan Rivera</a>
+                <a class="nav-link" href="Mayan-Rivera.html" style="color: #38658C;">Riviera Maya</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Cancun.html" style="color: #38658C;">Cancun</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Blog.html" style="color: #38658C;">Blog</a>
+                <a class="nav-link" href="https://blog.amazing-mexico.com" style="color: #38658C;">Blog</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="FAQS.html" style="color: #38658C;">FAQS</a>
@@ -178,7 +178,7 @@
                             <div id="Hotel-1" class="zoom">
                                 <a href="paquete1.html">
                                     <h2 class="price">$599</h2>
-                                    <h2 class="tit-H3">Cancun Villa del Palmar</h2>
+                                    <h2 class="tit-H3">Cancun Palmar</h2>
                                     <h3>All-Inclusive</h3>
                                     <h4>5 Days & 4 Nights</h4>
                               </a>
@@ -511,18 +511,19 @@
                 </form>
         </div>
         <div class="modal-footer d-flex justify-content-center">
-            <button type="button" class="btn btn-primary" id="mc-embedded-subscribe" onclick="sendToEplat()">Submit</button>
+           <button type="button" class="btn btn-primary g-recaptcha" id="mc-embedded-subscribe"  data-sitekey="6LfOunsaAAAAAJ3Ko_tXG02l-deACXdnKAM2VkTe" 
+        data-callback='onSubmit' 
+        data-action='submit' onclick="sendToRequest()">Submit</button>
           </div>
         </div>
         
       </div>
     </div>
-    </div>
-  <!-- ePlat Chat Code -->
+    </div>  <!-- ePlat Chat Code -->
 
   <div id="eplatChat">
 
-    <chat primary-color="#006581"
+    <chat primary-color="#8AE7D4"
 
           welcome-title="Welcome to Amazing Mexico!"
 
@@ -537,6 +538,15 @@
 </div>
 
 <!--Close ePlat Chat Code-->
+
+
+		 <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+ </script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>                 

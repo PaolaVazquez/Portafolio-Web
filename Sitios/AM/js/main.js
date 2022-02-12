@@ -55,14 +55,27 @@ function ocultarimagen(){
 }
 
 
-   function onSubmit(token) {
+/*RECAPTCHA*/
+
+
+function onSubmit(token) {
+
      document.getElementById("demo-form").submit();
+
    }
+
    function onClick(e) {
+
     e.preventDefault();
+
     grecaptcha.ready(function() {
+
       grecaptcha.execute('6LfOunsaAAAAAJ3Ko_tXG02l-deACXdnKAM2VkTe', {action: 'submit'}).then(function(token) {
+
           // Add your logic to submit to your backend server here.
+
       });
+
     });
+
   }
