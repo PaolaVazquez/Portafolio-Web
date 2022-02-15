@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's to travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  </head>
+  <body>
+    <h1>probando</h1>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+          <div class="container">
+            <a class="navbar-brand" href="#" id="logo">Let's to travel</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navegacion navbar-collapse collapse show" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#" id="menu">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="menu">Destinos con Playa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"id="menu">Destinos Nacionales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"id="menu">Destinos Internacionales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"id="menu">Contacto</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/bacalar.png" class="d-block w-100" alt="Bacalar" width="1100" height="500">
+          <div class="carousel-caption d-none d-md-block">
+              <h5>Bacalar</h5>
+              <p>Vamos a visitar una de las playas más hermosas de México.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/mazatlan.jpg" class="d-block w-100" alt="Mazatlán" width="1100" height="500">
+          <div class="carousel-caption d-none d-md-block">
+              <h5>Mazatlán</h5>
+              <p>Uno de los más bellos puertos de México, vamos a conocerlo.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/disney.jpg" class="d-block w-100" alt="Disney" width="1100" height="500">
+          <div class="carousel-caption d-none d-md-block">
+              <h5>Disney</h5>
+              <p>¡Vamos a divertirnos como niños pequeños!</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <form>
+
+      <div class="form-row">
+        <div class="container" id="formfechas">
+        <ul class="nav justify-content-center">
+          <div class="col-md-3 mb-3">
+            <label for="destin">Destino:</label>
+            <input type="text" class="form-control" placeholder="Ciudad, País, Playa">
+          </div>
+            <div class="col-md-2 mb-3">
+                <label for="fechaSal">Fecha Salida:</label>
+                <input type="date" class="form-control" placeholder="Fecha Salida">
+            </div>
+              <div class="col-md-2 mb-3">
+                  <label for="fechaReg">Fecha Regreso:</label>
+                  <input type="date" class="form-control" placeholder="Fecha Regreso">
+              </div>
+              <div class="col-md-2 mb-3">
+                <label for="Presupuesto">Presupuesto:</label>
+                <input type="text" class="form-control" placeholder="USD Ex. 1000">
+              </div>
+              <button class="button">Buscar</button>
+            </ul>
+
+          </div>
+        </div>
+        </form>
+
+
+    <div class="container" id="promociones">
+      <h1 class="display-4">Promociones</h1>
+      <p class="lead">Echa un vistazo a nuestras Promociones</p>
+    </div>
+
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col mb-4">
+          <div class="card bg-dark text-white">
+            <a href="colombia.html">
+              <img src="img/colombia.jpg" class="card-img" alt="COLOMBIA">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">COLOMBIA</h5>
+                  <p class="card-text">Vayamos a conocer la ciudad de la eterna primavera, Medellín.</p>
+                </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col mb-4">
+              <div class="card bg-dark text-white">
+                <img src="img/japon.jpg" class="card-img" alt="JAPÓN">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">JAPÓN</h5>
+                      <p class="card-text">Vayamos a conocer una de las ciudades con más tecnlogía en el mundo.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mb-4">
+                  <div class="card bg-dark text-white">
+                    <img src="img/brasil1.jpg" class="card-img" alt="BRASIL">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title">BRASIL</h5>
+                          <p class="card-text">Vayamos al carnaval más grande de Latinoamérica.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                      <div class="col mb-4">
+                        <div class="card bg-dark text-white">
+                          <img src="img/peru.jpeg" class="card-img" alt="PERÚ">
+                              <div class="card-img-overlay">
+                                <h5 class="card-title">PERÚ</h5>
+                                <p class="card-text">Vamos a conocer una de las 8 maravillas del mundo, Machupichu.</p>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+
+                          <!--Reseñas-->
+
+                        <div class="container">
+                          <div class="media border p-3">
+                          <div class="media-body">
+                            <h4>Juan Díaz <small><i>ING. Tecnologías de la Información</i></small></h4>
+                            <p>Excelente viaje con ellos. Volvería a viajar con ellos</p>
+                          </div>
+                          <img src="img/avatar.png" alt="John Doe" class="ml-3 mt-3 rounded-circle" style="width:60px;">
+                        </div>
+                      </div>
+
+
+                        <div class="card mb-3">
+                          <img src="img/roma.jpg" class="card-img-top" alt="ROMA">
+                          <div class="container">
+                            <h1 class="display-4">ROMA</h1>
+                            <p class="lead">Conoce las plazas, las fuentes, los monumentos y las atracciones más importantes que ver en Roma. Toda la ciudad de Roma es un museo al aire libre y estas son sus obras maestras.</p>
+                          </div>
+                        </div>
+              <!--Gallería-->
+
+                 <container id="cont-gallery">
+                          <div class="gallery" id="gallery">
+                            <div class="mb-3 pics animation all 1">
+                              <img class="img-fluid" src="img/mercado.jpg" alt="Mercado de Trajano">
+                          </div>
+                            <div class="mb-3 pics animation all 1">
+                              <img class="img-fluid" src="img/basilica.jpg" alt="Basilíca de San Pietro in Vincoli">
+                            </div>
+                              <div class="mb-3 pics animation all 1">
+                                <img class="img-fluid" src="img/capilla.jpg" alt="Capilla Sixtina">
+                              </div>
+                                <div class="mb-3 pics animation all 1">
+                                  <img class="img-fluid" src="img/coliseo.jpg" alt="Coliseo Romano">
+                                </div>
+                                <div class="mb-3 pics animation all 2">
+                                  <img class="img-fluid" src="img/arco.jpg" alt="Arco de Constantino">
+                                </div>
+                                <div class="mb-3 pics animation all 2">
+                                  <img class="img-fluid" src="img/plaza_san_pedro.jpg" alt="Plaza San Pedro">
+                                </div>
+                                  <div class="mb-3 pics animation all 2">
+                                    <img class="img-fluid" src="img/plaza_republica.jpg" alt="Plaza de la República">
+                                  </div>
+
+                                </div>
+                              </container>
+                              </body>
+                                <br><br>
+
+        <!--Footer-->
+        <footer id="content-footer">
+          <div class="container-footer">
+
+  <div class="row">
+    <div class="col">
+      <div class="colum1" id="columMasInformacion">
+      <h1> Más Información</h1>
+      <p> Somos una empresa que ayuda a cumplir los sueños de nuestros
+         clientes al viajar fuera del país y conocer el mundo.
+         Estamos comprometidos con el buen trato y la amabilidad.</p>
+    </div>
+    </div>
+    <div class="col-md-auto">
+      <div class="container-body">
+
+            <div class="colum2" id="columInformacionContacto">
+        <h1>Contacto</h1>
+        <div class="row2">
+          <img src="" >
+          <label>Av. Lopez Mateos Sur #3735
+            Col. Ciudad del Sol
+            Zapopan, Jalisco</label>
+        </div>
+        <div class="row2">
+          <img src="" >
+          <label>+52 3338398861</label>
+        </div>
+        <div class="row2">
+          <img src="" >
+          <label>ventas@letstotravel.com.mx</label>
+        </div>
+      </div>
+        </div>
+    </div>
+    <div class="col col-lg-2">
+      <div class="colum3" id="columnRedes">
+    <h1>Redes Sociales</h1>
+    <div class="row">
+      <img src="" >
+      <label>Facebook</label>
+    </div>
+    <div class="row">
+      <img src="" >
+      <label>Instagram</label>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+<br><br>
+<div class="container-footer1">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="information">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">Información Compañía </a>  |
+        <a href="#">Privacidad y Políticas</a> |
+        <a href="#">Términos y Condiciones</a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="copyright">
+      2020 Todos los Derechos Reservados &copy;
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script src="js/nav.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        </footer>
+
+
+
+
+</html>
