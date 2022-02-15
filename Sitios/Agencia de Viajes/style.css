@@ -1,0 +1,255 @@
+#logo{
+  letter-spacing: 12px;
+  font-size: 1.4em;
+  color:#ffbdbd;
+}
+#menu{
+  color: #ffbdbd;
+}
+
+.navegacion > a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+}
+
+.carousel-item{
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center ceneter scroll;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+.carousel-caption{
+  bottom: 270px;
+}
+.carousel-caption h5{
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+.carousel-caption p{
+  width: 75%;
+  margin: auto;;
+  font-size: 18px;
+  line-height: 1.9;
+}
+.navbar-light .navbar-brand{
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  top:0;
+    transition: top 0.5s;
+
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link{
+  color: #fff;
+}
+  .navbar.light .navbar-nav .nav-link{
+  color: #fff;
+}
+.navbar-nav{
+  text-align: center;
+}
+  .nav-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+  color: #ff6f69 !important;
+}
+@media only screen and (max-width:767px){
+  .navbar-nav.ml-auto{
+    background:rgba(0,0,0,0.5);
+  }
+  .navbar-toggler{
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+  }
+}
+.button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  margin-left: 14px;
+  margin-top: 12px;
+  margin-bottom: 25px;
+}
+.card-title{
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+}
+.card-text{
+  font-size: 18px;
+  line-height: 1.9;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+}
+.container{
+  text-align: center;
+  font-weight: bold;
+}
+#formfechas, #promociones{
+    font-family: "Sofia"
+}
+.form-row{
+  text-align: justify;
+}
+.card-img:before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(rgba(255,255,255,0), rgba(0,0,0,0.7));
+}
+.texttd{
+  text-align: center;
+}
+.textth{
+  text-align: center;
+}
+/**Reseñas**/
+
+/**Footer**/
+div.colum1.columMasInformacion{
+  text-align: center;
+}
+/**Fin footer**/
+
+footer{
+  background-image: url(img/footer4.jpg);
+  padding-top: 40px;
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  width: 100%;
+
+}
+footer
+footer.content-footer.h1{
+  color: #ffffff;
+}
+footer.p{
+  color: #ffffff;
+}
+
+/**Gallería**/
+.gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%;
+}
+
+.gallery.pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease;
+}
+
+.gallery .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1);
+}
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+}
+
+/**Footer**/
+.titulo, .subtitulo{
+  color: black;
+}
+/**Página Colombia**/
+#tit{
+  color: black;
+}
+#cuerpo{
+  color: black;
+  font-size: 15px;
+}
+#btn{
+  color: #fff;
+}
+
+/**Formulario**/
+div.containerForm{
+  padding-top: 40px;
+  padding-bottom:40px;
+
+
+}
+.form-control {
+  opacity: 0.8;
+-moz-opacity: 0.8;
+filter: alpha(opacity=80);
+-khtml-opacity: 0.8;
+}
+.colum_vamCom.columTittle{
+  padding-top: 40px;
+  margin-top: 400px;
+}
+.formulario-body{
+  background-image: url(img/form2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.formulario{
+  background: rgba(0, -0, -0,-.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow:0 0 30px rgba(0,-0,-0,-0.568) ;
+  color: white;
+}
+.form-control{
+  background: rgba(0, -0, -0, -.3);
+  border-style: none;
+  transition: 0.5s ease-in;
+}
+.ingresar{
+  background: #222A3F;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700 !important;
+  box-shadow: rgba(0, -0, -0, -0.568);
+  transition: 0.5s ease-in;
+}
+.ingresar:hover{
+  color: white;
+}
